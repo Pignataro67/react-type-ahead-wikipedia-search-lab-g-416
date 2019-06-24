@@ -40,6 +40,7 @@ class Autocomplete extends React.Component {
   componentWillUnMount() {
     this.removeListener();
   }
+
   render() {
     return (
       <div className='autocomplete'>
