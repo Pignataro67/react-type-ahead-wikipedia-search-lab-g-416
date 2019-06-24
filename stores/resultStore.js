@@ -12,4 +12,4 @@ class ResultStore extends Store {
   }
 }
 
-module.exports = new ResultStore();
+module.exports = new ResultStore({results: [], updated: new Date()});
