@@ -7,7 +7,8 @@ class Store {
   }
 
   addListener(listener) {
-    // TODO
+    this.listers = [...this.listeners, listener]
+    return () => this.listeners = this.listeners.filter(cListener => cListener !== listener);
   }
 
   setState(state) {
