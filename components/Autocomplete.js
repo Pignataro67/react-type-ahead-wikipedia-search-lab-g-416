@@ -42,7 +42,7 @@ class Autocomplete extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className='autocomplete'>
         <h2>Autocomplete</h2>
       </div>
     );
