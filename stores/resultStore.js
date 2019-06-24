@@ -2,7 +2,7 @@
 
 const Store = require('./Store');
 
-class ResultStore {
+class ResultStore extends Store {
 }
 
 module.exports = new ResultStore();
