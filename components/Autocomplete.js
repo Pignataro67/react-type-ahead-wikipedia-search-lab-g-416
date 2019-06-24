@@ -24,20 +24,20 @@ class Autocomplete extends React.Component {
     });
   }
 
-  onSearchFieldChange(ev) {
+   onSearchFieldChange(ev) {
     const query = ev.target.value;
     this.setState({ query });
 
-    if (query.length > 2) {
-      actions.search(query)
+     if (query.length > 2) {
+      actions.search(query);
     }
   }
 
-  componentDidMount() {
-    this.removeListener = resultStore.addListener(this.onResultStoreChange)
+   componentDidMount() {
+    this.removeListener = resultStore.addListener(this.onResultStoreChange);
   }
 
-  componentWillUnMount() {
+   componentWillUnmount() {
     this.removeListener();
   }
 
